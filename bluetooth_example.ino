@@ -33,7 +33,7 @@ void loop() {
   
   // Check for data from the HC-06
   // Could have some use cases (AT responses, etc.)
-  if (BTSerial.available()) {
+  if (bluetooth.available()) {
     // Read the data from the HC-06
     char response = bluetooth.read();
     // Send the response to the serial monitor
